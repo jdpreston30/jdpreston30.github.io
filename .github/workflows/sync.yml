@@ -3,11 +3,11 @@ on:
     branches: [main, master]
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # Runs automatically every hour
 name: Sync
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Sync
-        uses: r-universe/sync@v1
+        uses: r-universe-org/workflows/.github/workflows/sync.yml@v3
