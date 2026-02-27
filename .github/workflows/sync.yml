@@ -8,3 +8,5 @@ name: Sync
 jobs:
   sync:
     uses: r-universe-org/workflows/.github/workflows/sync.yml@v3
+    with:
+      token: ${{ secrets.PAT_FOR_UNIVERSE }}
